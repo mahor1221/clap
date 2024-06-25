@@ -367,7 +367,7 @@ fn write_dynamic_context(
                     literal.render_reset(),
                 );
                 if let Some(source) = error.inner.source.as_deref() {
-                    let _ = write!(styled, ": {source}");
+                    let _ = write!(styled, ":\n{source}");
                 }
                 true
             } else {
